@@ -1,0 +1,370 @@
+
+.flex-cc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.container{
+    width: 60%;
+    height: 100%;
+
+}
+
+
+/* Le style pour la container avec sa largeur et sa hauteur */
+#container-presence{
+    width: 100%;
+    min-height: 200px;
+    box-shadow: var(--BoxShadow);
+    border: 1px solid white;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 1.5em;
+}
+
+/* L'en-tête de la container */
+#container-presence .presence{
+    min-height: 30px;
+    width: 60%;
+    /* border-right: 2px solid; */
+    display: flex;
+    gap: 20px;
+}
+#container-presence .presence .boite{
+    height: 40px;
+    width: 100%;
+    min-width: 90px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-transform: capitalize;
+    flex: 1;
+}
+#container-presence .presence select{
+    width: 100%;
+    height: 90%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--DustyTeal);
+    font-size: 1.05em;
+    text-transform: capitalize;
+}
+#container-presence .presence .reference{
+    flex: 2;
+}
+#container-presence .presence .clandrier{
+    flex: 3;
+    padding: 0 10px;
+}
+#container-presence .presence .clandrier input{
+    width: 40%;
+    height: 50%;
+    border: none;
+    border-radius: inherit;
+    outline: none;
+    font-size: 1.2em;
+    background: transparent;
+}
+#container-presence .presence .boutton{
+    flex: 1.8;
+    background-color: var();
+    padding: 0;
+    border: none;
+}
+#container-presence .presence .boutton button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-color: transparent;
+    border-radius: inherit;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--DustyTeal);
+    offset: 0;
+    color: white;
+}
+
+/* Style pour la table */
+/* 
+#container-presence .table {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-collapse: collapse; /* Fusionner les bordures de la table 
+    width: 100%;
+} */
+#container-presence .table .colone{
+    display: flex;
+    margin-bottom: 10px;
+}
+#container-presence .table .colonne{
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 40px;
+}
+#container-presence .table .colonne:nth-child(1) .col-head::after{
+    content: "Matricule";
+}
+#container-presence .table .colonne:nth-child(2) .col-head::after{
+    content: "Nom";
+}
+#container-presence .table .colonne:nth-child(3) .col-head::after{
+    content: "Prenom";
+}
+#container-presence .table .colonne:nth-child(4) .col-head::after{
+    content: "Téléphone";
+}
+#container-presence .table .colonne:nth-child(5) .col-head::after{
+    content: "Référentiel";
+}
+#container-presence .table .colonne:nth-child(6) .col-head::after{
+    content: "Heure d'arrivée";
+}
+#container-presence .table .colonne:nth-child(7) .col-head::after{
+    content: "Status";
+}
+#container-presence .table .colonne div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    /* border-radius: inherit; */
+}
+#container-presence .table .colonne .col-head{
+    /* border: 2px solid; */
+    background-color: #b7dfdf33;
+    height: 0px;
+    display: none;
+}
+#container-presence .table .colonne .col-content{
+    border-bottom: 1px solid var(--DustyTeal);
+    text-transform: capitalize;
+}
+#container-presence .table .colonne .col-content.upper{
+    text-transform: uppercase;
+}
+/* On affiche l'en-tête du premier ligne */
+#container-presence .table .ligne:nth-child(1) .colonne .col-head{
+    display: flex;
+}
+#container-presence .table .colonne .col-content span{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+
+}
+#container-presence .table .colonne:nth-last-child(2) .col-content,
+#container-presence .table .colonne:nth-child(1) .col-content{
+    color: #008000;
+}
+#container-presence .table .colonne:nth-last-child(2) .col-content.retard{
+    color: #ff0000;
+}
+#container-presence .table .colonne .col-content.present span{
+    /* color: #165252; */
+    color: rgb(18, 72, 72);
+    
+    /* background-color: #63b0a566; */
+    background-color: #b7dfdf33;
+}
+#container-presence .table .colonne .col-content.absent span{
+    color: #c42e23;
+    background-color: #e66b4566;
+}
+
+/* Style pour le tableau */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style pour l'en-tête du tableau */
+.table th {
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style pour les cellules du tableau */
+.table td {
+    /* border: 1px solid #dddddd; */
+    padding: 8px;
+}
+
+/* Style pour les lignes impaires du tableau */
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    border-radius: 4px;
+
+  }
+  
+  .pagination a {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+  }
+  
+  .pagination a:first-child {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .pagination a:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .pagination a.active {
+    z-index: 1;
+    color: #fff;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+  
+  .pagination a:hover:not(.active) {
+    color: #007bff;
+    background-color: var(--main-color);
+    border-color: #dee2e6;
+  }
+
+
+
+
+
+/* -------------------------------------------------------------- */
+ /*| ON REND L'APPLICATION RESPONSIVE                             */
+/* -------------------------------------------------------------- */
+
+/* Quand on est face a une largeur d'écrans qui fait maximum 500px */
+@media screen and (max-width:500px) {
+
+.container{
+    width: 100%;
+}
+
+/* Style pour l'en-tête */
+#container-presence .presence{
+    display: block;
+    gap: 10px;
+    width: 100%;
+    border-right: none;
+}
+#container-presence .presence .boite{
+    /* background: rebeccapurple; */
+    width: 100%;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+/* Style pour la liste de présence */
+#container-presence .table .ligne{
+    flex-direction: column;
+    box-shadow: var(--BoxShadow);
+    border-radius: 10px;
+    padding: 10px;
+}
+#container-presence .table .colonne{
+    border-bottom: 2px solid;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 10px;
+    gap: 0;
+}
+#container-presence .table .colonne .col-content{
+    border: none;
+}
+#container-presence .table .ligne .colonne .col-head{
+    display: flex;
+}
+
+}
+
+
+@media screen and (min-width:501px) and (max-width:600px) {
+    #container-presence .presence{
+        display: block;
+        gap: 10px;
+        width: 100%;
+        border-right: none;
+    }
+    #container-presence .presence .boite{
+        width: 100%;
+        margin-bottom: 10px;
+        gap: 15px;
+    }
+}
+
+/* Quand on est face a une largeur d'écrans qui fait maximum 1000px et le minimum est 501px */
+@media screen and (max-width:1000px) and (min-width:501px){
+.container{
+    width: 100%;
+}
+#container-presence .presence{
+    width: 100%;
+}
+#container-presence .table {
+    gap: 10px;
+}
+#container-presence .table .ligne{
+    box-shadow: var(--BoxShadow);
+    border-radius: 10px;
+    flex-direction: column;
+}
+#container-presence .table .ligne:hover{
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.6);
+}
+
+#container-presence .table .colonne{
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+#container-presence .table .colonne .col-content,
+#container-presence .table .col-head{
+    flex: 1;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 2px solid var(--DustyTeal);
+}
+#container-presence .table .colonne .col-head{
+    background-color: inherit;
+}
+#container-presence .table .ligne .colonne .col-head{
+    display: flex;
+}
+
+}
+@media screen and (min-width:1001px){
+.container{
+    width: 80%;
+}
+}

@@ -1,0 +1,1096 @@
+.content{
+    padding: 1% 1% 0 0;   
+}
+.conteneur{
+   
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(194, 192, 192, 0.37);
+    padding: 0 2%;
+    margin-bottom:1.5% ;    
+    background-color: var(--white);
+}
+
+
+
+
+.contain1 > span:nth-child(2) {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.ecriture{
+    color: #9c99b0;
+    font-size: 0.8em;
+}
+.ecriture{
+    font-size: 0.8em;
+}
+
+.contain2 > span:nth-child(2) {
+    color: var(--main-color);
+    font-weight: bold;
+    
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contain1, .contain2 {
+        margin-bottom: 10px;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+#container {
+    width: 100%;
+    height: auto;
+    padding: 3% 0 5% 5%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+
+.flex-col-left {
+  height: inherit;
+  border: 1px solid #eeebeb;
+  margin-right:2rem;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .flex-col-left::before{
+    content: "1";
+    text-align: center;
+    position: relative;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    height: 20px;
+}
+
+
+ .flex-col-left::after{
+    content: "2";
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    height: 20px;
+}
+
+.flex-col-right {
+  flex: 1;
+    padding-top: 5rem;
+    margin-top: -5rem;
+   
+}
+
+.btn {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    border: 0px white solid;
+
+}
+.new {
+    background-color: rgb(22, 145, 114);
+}
+.insert {
+    background-color: rgb(250, 111, 19);
+}
+.file {
+    background-color: rgb(48, 146, 185);
+}
+.list {
+    background-color: rgb(29, 56, 131);
+}
+
+
+.div1 span {
+    color: #038f85;
+}
+.line2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+   
+}
+.line2 .div1 {
+    width: 15%;
+    font-size: 1.5em;
+    font-weight: bold;
+    flex: 1;
+   
+}
+.line2 .div2 {
+    flex: right;
+    margin-top: -5rem;
+
+}
+.line3 {
+    position: relative;
+    opacity: .5;
+    font-size: 1.5rem;
+    
+}
+.line3 input {
+    width: 100%;
+    height: 5vh;
+    padding-left: 2%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    border: 3px solid #eeebeb;
+    font-size: 2rem;
+    background-color: #eee;
+
+}
+.line3 span {
+    position: absolute;
+    left: .5vw;
+    top: 1.5vh;
+
+}
+
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    
+}
+
+th,
+td {
+    text-align: center;
+    padding: 12px;
+    /* border: 1px solid #ddd; */
+    
+
+}
+
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Cachez la checkbox native */
+.line5 input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Créez un checkbox personnalisé */
+  .line5 input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Ajustez la largeur */
+    height: 20px; /* Ajustez la hauteur */
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Stylisez le checkbox coché */
+  .line5 input[type="checkbox"]:checked + label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Ajoutez une coche au checkbox coché */
+  .line5 input[type="checkbox"]:checked + label::after {
+    content: "\2713";
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-left: 3px;
+  }
+  
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    border-radius: 4px;
+
+  }
+  
+  .pagination a {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+  }
+  
+  .pagination a:first-child {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .pagination a:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .pagination a.active {
+    z-index: 1;
+    color: #fff;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
+  
+  .pagination a:hover:not(.active) {
+    color: #007bff;
+    background-color: var(--main-color);
+    border-color: #dee2e6;
+  }
+
+
+
+  
+/* Responsive - Tableau */
+@media screen and (max-width: 768px) {
+    table thead,
+    table tbody,
+    table tr,
+    table td,
+    table th {
+        display: block;
+    }
+
+    table tr {
+        margin-bottom: 1rem;
+    }
+
+    table th {
+        text-align: right;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        background-color: #f2f2f2;
+        position: sticky;
+        top: 0;
+    }
+
+    table th::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+
+    table td {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .barrevertical {
+        z-index: -1;
+    }
+    .line1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vh;
+    }
+    h3 {
+        position: absolute;
+        left: 65%;
+        top: 3%;
+    }
+    .col-bas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .line2 {
+        display: block;
+        margin: 2%;
+    }
+    .div1{
+        white-space: nowrap;
+        margin-bottom: 2vh;
+    }
+    .line3 input {
+        padding-left: 10%;
+    }
+    .line3 span {
+        position: absolute;
+        left: .5vw;
+        top: 1.5vh;
+    }
+    .btn {
+        font-size: 1.5em;
+        padding: 10px;
+        border-radius: 6px;
+        color: var(--white);
+    }
+    .new,
+    .insert,
+    .file,
+    .list {
+        width: 100%;
+    }
+    .line-titre {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    .bloc div {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-haut {
+        background-color: rgb(153, 224, 221);
+        display: none;
+        opacity: 1;
+        margin-bottom: 10%;
+        border-radius: 15px;
+    }
+   
+    .bloc {
+        flex-direction: column;
+    }
+}
+
+
+/* Styles pour les écrans de taille moyenne (500px à 1000px) */
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    .barrevertical {
+        z-index: -1;
+    }
+    .line1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vh;
+    }
+    .line1 span {
+        margin-right: 8%;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .line2 {
+        display: block;
+        margin: 2%;
+    }
+    .div1{
+        white-space: nowrap;
+        margin-bottom: 2vh;
+    }
+    h3 {
+        position: absolute;
+        left: 65%;
+        top: 3%;
+    }
+    .line3 {
+        position: relative;
+        opacity: .5;
+    }
+    .line3 input {
+        width: 100%;
+        height: 5vh;
+        padding-left: 6%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+    }
+    .line3 span {
+        position: absolute;
+        left: .5vw;
+        top: 1.5vh;
+    }
+    .new,
+    .insert,
+    .file,
+    .list {
+        width: 100%;
+    }
+    .line-titre {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    .bloc div {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .col-haut {
+        background-color: rgb(153, 224, 221);
+        display: none;
+        opacity: 1;
+        margin-bottom: 10%;
+        border-radius: 15px;
+    }
+    .line5 .line {
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 1px 1px 6px gray;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .bloc {
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (min-width:1001px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+
+
+
+/* Styles du modal */
+.container-popup .modal {
+    display: none;
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    font-size: 2.1rem;
+}
+
+/* Affichage du popup */
+.container-popup .modal:target {
+    display: block;
+}
+/* Affichage du modal lorsque la cible est sélectionnée */
+/* Conteneur du popup */
+.container-popup .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ajustement de la largeur pour les écrans larges */
+    max-width: 1200px; /* Limitation de la largeur maximale */
+    position: relative;
+}
+
+/* Styles de l'en-tête du modal */
+.container-popup .head {
+    padding: 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f4f4;
+    width: 100%;
+}
+
+.container-popup .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* style du bouton pour fermer */
+.container-popup .close:hover,
+.container-popup .close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Styles des liens */
+.container-popup a {
+    text-decoration: none;
+}
+
+/* Styles des sections du popup */
+.container-popup .section {
+    position: relative;
+    margin-top: 5%; /* Espacement supérieur */
+}
+
+
+/* Styles des boutons */
+.container-popup .btn {
+    background-color: #038e89;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* Styles pour la première ligne de contenu */
+.container-popup .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0; /* Espacement supérieur et inférieur */
+}
+
+/* Styles pour les éléments de la première ligne de contenu */
+.container-popup .line :nth-child(1) {
+    background: #038e89;
+    height: 50px;
+    color: white;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: 1%;
+}
+
+.container-popup .line :nth-child(3) {
+    width: 48%; /* Largeur réduite pour les écrans plus petits */
+    height: 1px;
+    background: #aaa;
+}
+
+.container-popup .line :nth-child(4) {
+    text-align: center;
+    height: 50px;
+    border-radius: 100%;
+    font-weight: bold;
+    width: 4%;
+    margin-right: auto;
+}
+
+.container-popup .container-popup .line :nth-child(5) {
+    margin-left: 1%;
+}
+
+/* Styles pour le groupe d'entrées */
+.container-popup .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container-popup .input-group > div {
+    width: 49%;
+    margin-bottom: 10px;
+}
+
+.container-popup .input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+/* Styles pour le bouton "Annuler" */
+.container-popup .cancel-btn {
+    padding: 10px 15px; 
+    width: 30%;
+    background: #f0edf4; 
+    color: black; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.container-popup .input-group input[type="text"],
+.container-popup .input-group input[type="file"],
+.container-popup .input-group input[type="date"] {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container-popup .btn:hover {
+    opacity: 0.8;
+}
+
+/* Nouveaux styles pour le conteneur des boutons */
+.container-popup .btn-container {
+    position: absolute;
+    bottom: 10%;
+    right: 0.1%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; 
+    max-width: 600px;
+    width: 30%;
+}
+
+
+/* Nouveaux styles pour les boutons sur les petits écrans */
+@media screen and (max-width: 480px) {
+    .container-popup .modal-content {
+        width: 90%;
+        margin: 5% auto; 
+    }
+    .container-popup .input-group > div {
+        width: 100%;
+    }
+    .container-popup .line {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .container-popup .line :nth-child(1) {
+        margin-right: 0; 
+        margin-bottom: 5%;
+    }
+    .container-popup .line :nth-child(3) {
+        width: 70%; 
+        margin-bottom: 5%;
+    }
+    .container-popup .line :nth-child(4) {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+    .container-popup .btn-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .container-popup .btn-container .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+/* CONTAINER POPUP 2 */
+
+.container-popup2 .modal {
+    display: none;
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    font-size: 2rem;
+}
+
+/* Affichage du popup */
+.container-popup2 .modal:target {
+    display: block;
+}
+/* Affichage du modal lorsque la cible est sélectionnée */
+/* Conteneur du popup */
+.container-popup2 .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ajustement de la largeur pour les écrans larges */
+    max-width: 1200px; /* Limitation de la largeur maximale */
+    position: relative;
+}
+
+/* Styles de l'en-tête du modal */
+.container-popup2 .head {
+    padding: 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    width: 100%;
+}
+
+.container-popup2 .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* style du bouton pour fermer */
+.container-popup2 .close:hover,
+.container-popup2 .close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+
+/* Styles des liens */
+.container-popup2 a {
+    text-decoration: none;
+}
+
+/* Styles des sections du popup */
+.container-popup2 .section {
+    position: relative;
+    margin-top: 5%; /* Espacement supérieur */
+}
+
+/* Styles des boutons */
+.container-popup2  .btn {
+    background-color: #038e89;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+/* Styles pour la première ligne de contenu */
+.container-popup2  .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0; /* Espacement supérieur et inférieur */
+}
+
+/* Styles pour les éléments de la première ligne de contenu */
+.container-popup2  .line :nth-child(1) {
+    background: #038e89;
+    height: 50px;
+    color: white;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: 1%;
+}
+
+.container-popup2  .line :nth-child(3) {
+    width: 48%; /* Largeur réduite pour les écrans plus petits */
+    height: 1px;
+    background: #aaa;
+}
+
+.container-popup2  .line :nth-child(4) {
+    text-align: center;
+    height: 50px;
+    border-radius: 100%;
+    font-weight: bold;
+    width: 4%;
+    margin-right: auto;
+}
+
+.container-popup2  .container-popup2  line :nth-child(5) {
+    margin-left: 1%;
+}
+
+/* Styles pour le groupe d'entrées */
+.container-popup2  .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container-popup2  .input-group > div {
+    width: 49%;
+    margin-bottom: 10px;
+}
+
+.container-popup2 .input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styles pour le bouton "Annuler" */
+.container-popup2 .cancel-btn {
+    padding: 10px 15px; 
+    width: 30%;
+    background: #f0edf4; 
+    color: black; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+/* Styles pour les champs d'entrée */
+.container-popup2 .input-group input[type="text"],
+.container-popup2 .input-group input[type="email"],
+.container-popup2 .input-group input[type="file"],
+.container-popup2 .input-group input[type="date"],
+.container-popup2 .input-group select {
+    width: calc(100% - 20px); /* Largeur ajustée avec marge */
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Nouveaux styles pour le conteneur des boutons */
+.container-popup2 .btn-container {
+    position: absolute;
+    bottom: 10%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; 
+    width: 35%; 
+    max-width: 600px;
+}
+
+/* Styles pour l'icône de champ date */
+.container-popup2 .date-input-container {
+    position: relative;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    display: none; 
+}
+.container-popup2 .date-input-container input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px; 
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: transparent; /* Fond transparent pour masquer l'icône par défaut */
+}
+
+.container-popup2 .date-input-container input[type="date"] + .fa-calendar-day {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5%;
+    top: 60%;
+    height: 40%; /* Largeur ajustée de l'icône */
+    width: 5%; /* Largeur ajustée de l'icône */
+    transform: translateY(-50%);
+    background-color: #038e89;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* styles pour les boutons sur les petits écrans */
+@media screen and (max-width: 480px) {
+
+
+   .container-popup2 .modal-content {
+        width: 90%;
+        margin: 5% auto; 
+    }
+
+
+   .container-popup2 .input-group > div {
+        width: 100%;
+    }
+
+
+   .container-popup2 .line {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+
+   .container-popup2 .line :nth-child(1) {
+        margin-right: 0; 
+        margin-bottom: 5%;
+    }
+
+
+   .container-popup2 .line :nth-child(3) {
+        width: 70%; 
+        margin-bottom: 5%;
+    }
+
+
+   .container-popup2 .line :nth-child(4) {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+
+
+    .container-popup2.btn-container {
+        width: 100%; 
+        max-width: 600px; 
+    }
+
+
+    .container-popup2.btn-container .btn {
+        margin-bottom: 5px;
+        width: 100%; 
+    }
+}
+
+
+/* excel */
+
+.excel {
+    display: none;
+  }
+  .excel:target {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    
+  }
+  .popup {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    max-width: 100%; 
+    margin: 20px auto; 
+  }
+  .popup-header {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  .drop-zone {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .drop-zone:hover {
+    border-color: #333;
+  }
+
+  .drop-zone-text {
+    width: 100%;
+    border: 2px solid hsl(0, 0%, 21%);
+    border-radius: 3px;
+    display: block;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .hidden-input:focus+.drop-zone .file-selected-text {
+    display: inline-block;
+  }
+
+  .upload {
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+ 
+  .btn-red {
+    background-color: #fd0000;
+    color: white;
+  }
+  .btn-green {
+    background-color: #008f88;
+    color: white;
+  }
+  .footer-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1%;
+  }
+
+  /* Media Queries for responsiveness */
+  @media only screen and (max-width: 600px) {
+    .popup {
+      width: 90%;
+    }
+    .upload {
+      height: 100px;
+    }
+  }

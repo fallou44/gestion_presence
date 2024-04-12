@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+/* ******************************************body****************** */
+.promotions {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+.containe {
+  height: 53%;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-right: 1em;
+  border-radius: 1em;
+  margin-top: 3rem;
+  position: relative;
+  top: 24%;
+  width: 100%;
+  padding-right: 5rem;
+}
+
+.dev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-left: 2rem;
+  top: 6%;
+  font-size: 1.5em;
+}
+.equipement {
+  position: absolute;
+  top: 400%;
+  left: 5%;
+  z-index: 10;
+  color: #008f89;
+}
+.promo {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: -1em;
+}
+.promo .un {
+  color: #008f89;
+}
+.input input {
+  border: 0.1em solid #eeedf0;
+  padding: 1em;
+  background-color: #f6f7fb;
+  border-radius: 0.5em;
+  position: relative;
+}
+.input i {
+  color: #008f89;
+  font-size: 1em;
+  position: relative;
+  top: 0;
+  left: -1.5em;
+}
+.input input:focus {
+  outline: none;
+  padding: 1em;
+  cursor: pointer;
+}
+.input button {
+  border: 0.1em solid #eeedf0;
+  padding: 1em;
+  background-color: #008f89;
+  border-radius: 0.5em;
+  position: relative;
+  left: -1.5em;
+  cursor: pointer;
+  padding-right: 3em;
+  margin-left: 2em;
+  padding-left: 4em;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+.input button:hover {
+  background-color: #008f89;
+  color: #fff;
+}
+.input button i {
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: absolute;
+  top: 30%;
+  margin: 2rem;
+}
+th,
+td {
+  border: none;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f7faff;
+  border: none;
+}
+tr:nth-child(1) {
+  color: #558b59;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+table tr td:nth-child(4) input {
+  background-color: #cacaca;
+  border: 0.1em solid #eeedf0;
+  border-radius: 1em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+table tbody tr:nth-child(1) {
+  background-color: rgb(185, 248, 185);
+  width: 90%;
+}
+table tbody tr:nth-child(1) input[type="checkbox"] {
+  background-color: #008f89;
+}
+
+table tbody tr td input[type="checkbox"] {
+  appearance: none;
+  -webket-appearance: none;
+  /* accent-color: #008F89; */
+  width: 10%;
+  height: 2em;
+  border-radius: 0.5em;
+  background-color: #eeedf0;
+}
