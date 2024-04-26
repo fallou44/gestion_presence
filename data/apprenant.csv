@@ -1,0 +1,30 @@
+image,nom,prenom,email,genre,telephone,action,id_promotion,referentiel
+img2.png,Gueye,Oumar,oumar@example.com,M,778888888,0,P1,Dev Web
+img3.png,Diallo,Aminata,aminata@example.com,F,779999999,1,P2,Dev Web
+img4.png,Ndiaye,Modou,modou@example.com,M,770000000,1,P3,REF-DIG
+img5.png,Sow,Fatou,fatou@example.com,F,771111111,1,P4,REF-DIG
+img6.png,Camara,Mamadou,mamadou@example.com,M,772222222,6,P5,REF-DIG
+img7.png,Diagne,Aïssatou,aissatou@example.com,F,773333333,1,P6,REF-DIG
+img7.png,Diagne,salla,salla@example.com,F,773333333,1,P6,Dev Web
+img7.png,Diagne,soukeuye,soukeye@example.com,F,773333333,1,P6,REF-DIG
+img7.png,Diagne,ndeye,ndeye@example.com,F,773333333,1,P6,Hackeuse
+img9.png,Sylla,Aïcha,aicha@example.com,F,775555555,0,P4,AWS
+img10.png,Drame,Moussa,moussa@example.com,M,776666666,1,P5,REF-DIG
+img11.png,Fall,Amy,amy@example.com,F,777777777,0,P5,Dev-data
+img12.png,Bah,Mamadou,mamadou@example.com,M,778888888,0,P1,Dev Web
+img13.png,Cisse,Aminata,aminata@example.com,F,779999999,1,P2,Dev-data
+img13.png,Cisse,Modou,aminata@example.com,F,779999999,1,P2,Dev Web
+img14.png,Ndiaye,Modou,modou@example.com,M,770000000,1,P3,Dev Web
+img15.png,Sylla,Fatou,fatou@example.com,F,771111111,1,P4,REF-DIG
+img16.png,Camara,Mamadou,mamadou@example.com,M,772222222,6,P5,Hackeuse
+img17.png,Diagne,Aïssatou,aissatou@example.com,F,773333333,1,P6,Dev Web
+img20.png,Drame,Moussa,moussa@example.com,M,776666666,1,P5,AWS
+img21.png,Fall,Amy,amy@example.com,F,777777777,0,P5,Dev Web
+img22.png,seydi,alioune,oum@example.com,M,778888888,0,P1,Dev-data
+img22.png,seck,Fallou,oum@example.com,M,778888888,0,P1,REF-DIG
+img22.png,mbaye,Maissa,oum@example.com,M,778888888,0,P1,Dev Web
+img22.png,seydi,Oumar,oum@example.com,M,778888888,0,P1,Dev-data
+img23.png,Diallo,Aminata,aminata@example.com,F,779999999,1,P2,Dev-data
+img23.png,Diallo,Lamine,aminata@example.com,F,779999999,1,P2,Dev Web
+img24.png,Ndiaye,Modou,modou@example.com,M,770000000,1,P3,Dev Web
+img25.png,Sow,Fatou,fatou@example.com,F,771111111,1,P4,REF-DIG

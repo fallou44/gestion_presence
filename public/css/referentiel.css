@@ -4,25 +4,38 @@
 /* ******************************************body****************** */
 .promotions{
 	margin-top: 1%;
-	margin-left: 14.5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-right: 1em;
+	font-size: 1.8em;
 }
 .main{
 	margin-left: 1%;
-	height: 50%;
+	/* margin-right: 20%; */
+	height: 80%;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
 	position: relative;
+	width: 95%;
+	margin-bottom: 15%;
+
+
+}
+.referent{
+	display: flex;
+	/* gap: 5em; */
+	flex: 1;
+	width: 100%;
+	justify-content: space-between;
 }
 
 .img{	
-	width: 18%;
-	height: 70%;
+	border-radius: 29px;
+	box-shadow: 0 1px 1px rgb(145, 140, 140);
+	width: 28%;
+	height: 40vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -33,66 +46,70 @@
 	top: 1%;
 	left: -1%;
 	
+	
 
 }
 .img  img{
-	width: 80%;
-	height: 50%;
+	margin-top: 1px;
+	border-radius: 10px;
+	/* width: 70%;
+	height: 60%; */
 	block-size: contain;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 	cursor: pointer;
-	margin-bottom: 20%;
+	margin-right: 19px;
+	/* margin-bottom: 20%; */
 
 }
-.last{
-	position: relative;
-	top: 5%;
-	left: -41%;
-}
-
 
 .formRef{
-	width: 18%;
+	width: 30%;
+	padding-right: 20px;
 	height: 70%;
 	display: block;
 	flex-direction: column;
-	gap: 2em;
+	gap: 3em;
 	align-items: center;
 	border-radius: 0.5em;
 	background-color: #fff;
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: relative;
-	top: 1%;
-	left: -1%;
+	margin-top: 1em;
+	border-radius: 5%;
+	margin-right: 40px;
+	
+
 }
 h4{
 	margin: 0.6em;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 .formRef span{
 	margin: 1em 0.6em;
+	font-size: 1.5em;
+
 
 }
 
-.lebelle{
+.formRef input{
 	width: 90%;
-	height: 15%;
+	height: 70px;
 	margin-left: 1em;
 	margin: 1em;
 	border-radius: 1em ;
-	border:  0.1em  solid #D5D5D7;
+	border:  1px  solid #D5D5D7;
 	background-color: #fff;
-	margin-top: -1em;
+	margin-top: 2em;
 	padding-left: 4em;
+
 
 }
 .lebelle::placeholder{
 	color: #7E7987;
 	font-size: 1em;
-	padding-left: 2em;
+	/* padding-left: 2em; */
 
 }
 
@@ -118,32 +135,39 @@ h4{
 	margin: 1em;
 	padding: 1.5em ;
 	border-radius: 1em;
-	border: #D5D5D7;
-	background-color: #008F89;
+	background-color: #008f13;
 	color: #fff;
 	font-weight: bold;
 	font-size: 1em;
 }
-.formRef i{
+.fa-regular {
 	position: relative;
-	top: 8%;
+	top: 5rem;
 	left: 10%;
-	font-size: 1.8em;
+	font-size: 1.9em;
 	color: #7E7987;
 	cursor: pointer;
+}
 
+i .first-user{
+	position: relative;
+	top: 20px;
 }
 .formRef textarea{
 	width: 90%;
-	height: 15%;
 	margin-left: 1em;
 	margin: 1em;
 	border-radius: 1em;
 	border:  0.1em  solid #D5D5D7;
 	background-color: #fff;
-	margin-top: -1em;
-	padding: 1em 1em 1em 4em;
+	padding-left: 3em;
+}
 
+.formRef textarea::placeholder{
+	color: #7E7987;
+	font-size: 1em;
+	padding-top: 2em;
+	padding-left: 1em;
 }
 .formRef textarea:focus{
 	outline: none;
@@ -151,18 +175,22 @@ h4{
 
 .ref{
 	position: absolute;
-	top: 70%;
-	left: 25%;
+	top: 80%;
+	left: 40%;
 	font-weight: normal;
+	font-size: 1.5em;
 }
 .active{
 	color: #008F89;
-	margin-left: 3em;
+	margin-left: 0.2em;
 	cursor: pointer;
 }
 .ref span{
 	line-height: 2em;
-	text-align: center;
+	margin-left: -7em;
+	font-weight: 800;
+	/* font-size: 15px; */
+	/* text-align: center; */
 
 
 }
@@ -174,10 +202,11 @@ h4{
 .points ul {
 	display: flex;
 	position: relative;
-	top: -9.5em;
-	left: 0;
+	top: -11em;
+	left: 30px;
 	gap: 0.5em;
 	cursor: pointer;
+	font-size: 1.5em;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {

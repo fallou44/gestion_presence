@@ -1,4 +1,6 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 .flex-cc{
     display: flex;
     justify-content: center;
@@ -22,6 +24,9 @@
     padding: 30px;
     border-radius: 15px;
     font-size: 1.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+
 }
 
 /* L'en-tête de la container */
@@ -56,14 +61,13 @@
     flex: 2;
 }
 #container-presence .presence .clandrier{
-    flex: 3;
-    padding: 0 10px;
+    flex: 4;  
 }
 #container-presence .presence .clandrier input{
     width: 40%;
     height: 50%;
     border: none;
-    border-radius: inherit;
+    /* border-radius: inherit;   padding: 0 0px; */
     outline: none;
     font-size: 1.2em;
     background: transparent;
@@ -164,10 +168,10 @@
 }
 #container-presence .table .colonne:nth-last-child(2) .col-content,
 #container-presence .table .colonne:nth-child(1) .col-content{
-    color: #008000;
+    color: #c9ddc9;
 }
 #container-presence .table .colonne:nth-last-child(2) .col-content.retard{
-    color: #ff0000;
+    color: #e4b6b6;
 }
 #container-presence .table .colonne .col-content.present span{
     /* color: #165252; */
@@ -177,7 +181,7 @@
     background-color: #b7dfdf33;
 }
 #container-presence .table .colonne .col-content.absent span{
-    color: #c42e23;
+    color: #e99994;
     background-color: #e66b4566;
 }
 
@@ -205,6 +209,9 @@
 /* Style pour les lignes impaires du tableau */
 .table tbody tr:nth-child(odd) {
     background-color: #f9f9f9;
+}
+.boite tr td:nth-child(7){
+    width: 20px;
 }
 
 
@@ -252,7 +259,7 @@
   }
   
   .pagination a:hover:not(.active) {
-    color: #007bff;
+    color: #c8d2dd;
     background-color: var(--main-color);
     border-color: #dee2e6;
   }
@@ -368,3 +375,4 @@
     width: 80%;
 }
 }
+

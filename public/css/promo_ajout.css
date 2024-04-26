@@ -21,25 +21,140 @@
     flex-direction: row;
     padding: 5rem 0 8rem 4rem;
     margin-bottom: 200px;
+    box-shadow: 10px 5px 5px 5px rgba(216, 213, 213, 0.24);
+    
+}
+.name label{
+    font-size: 20px;
+    font-weight: bold;
 }
 
-/* .conteneur{
-   
-    height: 80px;
+.name input[type="text"]{
+  border: 1px solid black !important;
+  padding: 20px;
+  border-radius: 12px;
+  width: 95%;
+  font-size: 20px;
+}
+.date{
     display: flex;
-    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+
+}
+ input[type="date"]{
+    
+    border: 1px solid black !important;
+    padding: 20px;
+    padding-left: 500px;
+    border-radius: 12px;
+    width: 100%;
+    font-size: 20px;
+
+ }
+
+.dat-debut{
+    /* border: 1px solid black !important;
+    padding: 10px; */
+    border-radius: 12px;
+    width: 47%;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.dat-debut label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.dat-fin{
+    /* border: 1px solid black !important;
+    padding: 10px; */
+    border-radius: 12px;
+    width: 47%;
+    font-size: 20px;
+}
+.dat-fin label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button
+{
+    display: flex;
     justify-content: space-between;
-    font-size: 2rem;
+    margin-right: 25px;
+}
+.button_2
+{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 25px;
+}
+
+.button .button1{
+    font-size: 20px;
+    border: 1px solid black !important;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(18, 76, 235);
+    color: white;
+    border: none;
     border-radius: 5px;
-    box-shadow: 2px 2px 6px rgba(194, 192, 192, 0.37);
-    padding: 0 2%;
-    margin-bottom:9990px ;    
-    background-color: var(--white);
-} */
+    cursor: pointer;
+}
+
+.button .button2{
+    font-size: 20px;
+    border: 1px solid black !important;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #67b7af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.button_2 .button-1{
+    margin-right: 25px;
+    /* font-size: 20px; */
+    /* border: 1px solid black !important; */
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: rgb(18, 76, 235);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_2 .button-2{
+    /* font-size: 20px; */
+ 
+    /* border: 1px solid black !important; */
+    cursor: pointer;
+    padding: 15px 20px;
+    background-color: #67b7af;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* fin new css */
 
 .contain1 > span:nth-child(2) {
     color: var(--main-color);
@@ -85,6 +200,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
 }
 
  .flex-col-left::before{
@@ -120,31 +236,24 @@
     padding: 1rem;
     height: 20px;
 }
+.flex-col-left::before {
+    /* Autres styles */
+    margin-bottom: 10px; /* Ajoute un espace de 10px en bas */
+}
 
+.flex-col-left::after {
+    /* Autres styles */
+    margin-top: 10px; /* Ajoute un espace de 10px en haut */
+}
 .flex-col-right {
   flex: 1;
-    padding-top: 5rem;
+    padding-top: 2rem;
     margin-top: -5rem;
    
 }
 
-.btn {
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 6px;
-    color: white;
-    border: 0px white solid;
 
-}
-.new {
-    background-color: rgb(22, 145, 114);
-}
-.insert {
-    background-color: rgb(250, 19, 19);
-}
-.file {
-    background-color: rgb(48, 146, 185);
-}
+
 .list {
     background-color: rgb(18, 76, 235);
 }
@@ -179,7 +288,7 @@
     font-size: 1.5rem;
     
 }
-.line3 input {
+/* .line3 input {
     width: 100%;
     height: 5vh;
     padding-left: 2%;
@@ -189,7 +298,7 @@
     font-size: 2rem;
     background-color: #eee;
 
-}
+} */
 .line3 span {
     position: absolute;
     left: .5vw;
@@ -198,14 +307,7 @@
 }
 
 
-/* Tableau */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    
-}
+/* Tabl
 
 th,
 td {
@@ -214,7 +316,7 @@ td {
     /* border: 1px solid #ddd; */
     
 
-}
+
 
 
 th {

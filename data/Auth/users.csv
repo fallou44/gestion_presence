@@ -1,0 +1,10 @@
+Nom,Email,Mot de passe,Rôle
+"Gueye Oumar","oumar@example.com","Motdepasseoumar@22","Apprenant"
+"Diallo Aminata","aminata@example.com","mot_de_passe_aminata","Apprenant"
+"Ndiaye Modou","modou@example.com","mot_de_passe_modou","Apprenant"
+"Sow Fatou","fatou@example.com","mot_de_passe_fatou","Apprenant"
+"Camara Mamadou","mamadou@example.com","mot_de_passe_mamadou","Apprenant"
+"Diagne Aïssatou","aissatou@example.com","mot_de_passe_aissatou","Apprenant"
+"Diagne salla","salla@example.com","mot_de_passe_salla","Apprenant"
+"Fadil Admin","fadil@example.com","mot_de_passe_oumar","Administrateur"
+"SECK","SECK@example.com","mot_de_passe_pas","Administrateur"   

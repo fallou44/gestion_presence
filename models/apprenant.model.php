@@ -1,99 +1,44 @@
 <?php 
-
-function findAllStudents(){
-    $student = [
-        [ "image" => 'img1.png',
-        "nom" => 'elimane',
-        "prenom" => 'nging',
-        "email" => 'elimane@nging',
-        "genre" => 'M',
-        "telephone" => '777777777',
-        "action" => false
-        
-    ],
-        [ "image" => 'img1.png',
-            "nom" => 'seydina',
-            "prenom" => 'mhd',
-            "email" => 'moussa',
-            "genre" => 'M',
-            "telephone" => '777777777',
-            "action" => false
-            
-        ],
-        [ "image" => 'img1.png',
-            "nom" => 'pathe',
-            "prenom" => 'pathe',
-            "email" => 'pathe',
-            "genre" => 'M',
-            "telephone" => '777120777',
-            "action" => true
-            
-        ], 
-        [ "image" => 'img1.png',
-            "nom" => 'modou',
-            "prenom" => 'modou',
-            "email" => 'modou',
-            "genre" => 'M',
-            "telephone" => '777347977',
-            "action" => false
-            
-        ],
-        [ "image" => 'img1.png',
-            "nom" => 'andaw',
-            "prenom" => 'andaw',
-            "email" => 'andaw',
-            "genre" => 'M',
-            "telephone" => '777729777',
-            "action" => true
-            
-        ],
-        [ "image" => 'img1.png',
-            "nom" => 'issa',
-            "prenom" => 'issa',
-            "email" => 'issa',
-            "genre" => 'M',
-            "telephone" => '777987777',
-            "action" => false
-            
-    ],
+// session_start();
+function findAllStudents($referenciel = '') {
+    // Récupérez tous les apprenants
+    $allStudents = redCsv(PATHAPRENANT, $_SESSION['SESSION']);
     
-    [ "image" => 'img1.png',
-    "nom" => 'modou',
-    "prenom" => 'ndiaye',
-    "email" => 'modou@gmail?com',
-    "genre" => 'M',
-    "telephone" => '777864799',
-    "action" => false
+    // Si aucun référentiel spécifique n'est sélectionné, retournez simplement tous les apprenants
+    if (empty($referenciel)) {
+        return $allStudents;
+    }
     
-],
-[ "image" => 'img1.png',
-"nom" => 'modou',
-"prenom" => 'ndiaye',
-"email" => 'modou@gmail?com',
-"genre" => 'M',
-"telephone" => '777573799',
-"action" => false
+    // Sinon, filtrez les apprenants par référentiel
+    $filteredStudents = array_filter($allStudents, function($student) use ($referenciel) {
+        return $student['referentiel'] === $referenciel;
+    });
 
-],
-[ "image" => 'img1.png',
-"nom" => 'modou',
-"prenom" => 'ndiaye',
-"email" => 'modou@gmail?com',
-"genre" => 'M',
-"telephone" => '772387799',
-"action" => false
+    // Vérifiez si des apprenants ont été trouvés pour le référentiel sélectionné
+    // if (empty($filteredStudents)) {
+    //     // Aucun apprenant trouvé pour le référentiel sélectionné
+    //     echo "Aucun apprenant trouvé pour le référentiel sélectionné.";
+    // }
 
-]
-    ];
-
-return $student;
-
+    return $filteredStudents;
 }
 
 
+//  filtrer  par email  
+// function recherche($filtrer){
+//     $recherches=findAllStudents();
+//     $result=[];
+// foreach($recherches as  $recherche ) {  
+
+//     if($recherche["nom"]==trim($filtrer)){
+//         $result[]=$recherche;
+//     }       
+// }  
+// return $result;
+// }
 
 // fonction pagination
-$eleByPage=4 ;
+$eleByPage=6 ;
 $pageEtu = isset($_GET['pageAff']) ? $_GET['pageAff'] : 1;
 $totalPage=ceil(count(findAllStudents())/$eleByPage); //ceil() fonction qui arrondit par exee
 // echo($pageEtu<1 || $pageEtu>$totalPage);
@@ -105,48 +50,14 @@ $etudiantsPage = array_slice(findAllStudents(), $eleDeb, $eleByPage);
 
 
 
-
-//  filtrer  par email  
-function recherche($filtrer){
-            $recherches=findAllStudents();
-            $result=[];
-        foreach($recherches as  $recherche ) {  
-
-            if($recherche["email"]==trim($filtrer)){
-                $result[]=$recherche;
-            }       
-        }  
-        return $result;
-        }
+$apprenants =findAllStudents();
+$apprenants = $etudiantsPage;
+if (isset($_POST["search"])){
+    $apprenants= recherche($_POST["search"]);
+}
 
 
 
-
-
-        
-
-        // function findStudents($page = 1, $perPage = 4, $filterEmail = null) {
-        //     $students = findAllStudents(); // Remplacez cette ligne par la logique pour obtenir tous les étudiants depuis la source de données
-        
-        //     // Filtrer par email si un filtre est spécifié
-        //     if ($filterEmail !== null) {
-        //         $filteredStudents = array_filter($students, function($student) use ($filterEmail) {
-        //             return $student['email'] == trim($filterEmail);
-        //         });
-        //     } else {
-        //         $filteredStudents = $students;
-        //     }
-        //     // Pagination
-        //     $totalStudents = count($filteredStudents);
-        //     $totalPages = ceil($totalStudents / $perPage);
-        //     $start = ($page - 1) * $perPage;
-        //     $paginatedStudents = array_slice($filteredStudents, $start, $perPage);
-        
-        //     return [
-        //         'students' => $paginatedStudents,
-        //         'totalPages' => $totalPages
-        //     ];
-        // }
 
 
 

@@ -1,5 +1,5 @@
 </section>
-<footer class="footer">
+<footer class="footer" >
     &copy; Sonatel Academy
 </footer>
 <div class="fixed-icon">

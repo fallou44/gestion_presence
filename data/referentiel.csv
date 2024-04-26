@@ -1,0 +1,26 @@
+"id_referentiel","image","nom","statut","duree_formation","niveau_difficulte","prerequis","id_promotion","langage_principal","type_certification"
+"2","../public/images/versionner.png","Dev-data","Active","6 mois","Facile","Aucun","P1","JavaScript","Certificat de participation"
+"1","../public/images/versionner.png","Dev Web","Active","6 mois","Facile","Aucun","P1","JavaScript","Certificat de participation"
+"1","../public/images/versionner.png","REF-DIG","Active","6 mois","Facile","Aucun","P1","JavaScript","Certificat de participation"
+"2","../public/images/versionner.png","Dev-data","Active","9 mois","Difficile","Expérience en développement web","P2","HTML/CSS","Certificat de participation"
+"2","../public/images/versionner.png","REF-DIG","Active","8 mois","Moyen","Connaissance de base en informatique","P3","Python","Certification professionnelle"
+"2","../public/images/versionner.png","Dev Web","Active","8 mois","Moyen","Connaissance de base en informatique","P3","Python","Certification professionnelle"
+"2","../public/images/versionner.png","Dev Web","Inactive","8 mois","Moyen","Connaissance de base en informatique","P3","Python","Certification professionnelle"
+"4","../public/images/versionner.png","Dev Web","Inactive","5 mois","Moyen","Connaissance de base en informatique","P4","Python","Certification professionnelle"
+"4","../public/images/versionner.png","Dev-Data","Active","5 mois","Moyen","Connaissance de base en informatique","P4","Python","Certification professionnelle"
+"4","../public/images/versionner.png","REF-DIG","Active","5 mois","Moyen","Connaissance de base en informatique","P4","Python","Certification professionnelle"
+"4","../public/images/versionner.png","AWS","Active","5 mois","Moyen","Connaissance de base en informatique","P4","Python","Certification professionnelle"
+"3","../public/images/versionner.png","REF-DIG","Active","7 mois","Difficile","Expérience avec AWS","P5","Java","Certification AWS"
+"3","../public/images/versionner.png","REF-DIG","Active","7 mois","Difficile","Expérience avec AWS","P4","Java","Certification AWS"
+"7","../public/images/versionner.png","Dev Web","Active","6 mois","Facile","Aucun","P5","JavaScript","Certification web"
+"7","../public/images/versionner.png","Dev Web","Active","6 mois","Facile","Aucun","P2","JavaScript","Certification web"
+"7","../public/images/versionner.png","Dev-data","Active","6 mois","Facile","Aucun","P5","JavaScript","Certification data"
+"8","../public/images/versionner.png","AWS","Active","8 mois","Difficile","Expérience en hacking","P5","Python","Certificat de participation"
+1,../public/images/versionner.png,devops,Inactive,"6 mois",Facile,sdvsvgd,,JavaScript,"Certificat de participation"
+1,../public/images/versionner.png,"my promotion",Active,"6 mois",Facile,zez,P1,JavaScript,"Certificat de participation"
+1,../public/images/versionner.png,"application web mobil",Inactive,,,dgegfe,P1,,
+1,../public/images/versionner.png,dzhdghzd,Active,,,dzd,P3,,
+1,../public/images/versionner.png,sdzdez,Inactive,,,dzffzsf," ",,
+1,../public/images/versionner.png,fafafa,Inactive,,,zhdzgd," ",,
+1,../public/images/versionner.png,fab,Active,,,zdzd,P7,,
+1,../public/images/imag.jpeg,zzte,Active,,,zetgztz,,,

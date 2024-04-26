@@ -1,5 +1,7 @@
 <?php
-    define("WEBROOT","http://www.ibrahima.diallo:8370/projet/public");
-
-    //require_once '../config/helpers.php';
-    //include('../model/presence.model.php');
+    define("PATHPRESENCE", "data/presence.csv");
+    define("PATHAPRENANT", "data/apprenant.csv");
+    define("PATHPROMOTION", "data/promotion.csv");
+    define("PATHREFERENTIEL", "data/referentiel.csv");
+    
+    // SESSION_START();

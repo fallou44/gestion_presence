@@ -16,7 +16,7 @@
   font-size: 1.5em;
 }
 .containe {
-  height: 53%;
+  height: 50vh;
   background-color: #fff;
   box-sizing: border-box;
   margin-right: 1em;
@@ -26,6 +26,7 @@
   top: 24%;
   width: 100%;
   padding-right: 5rem;
+  position: absolute;
 }
 
 .dev {
@@ -49,9 +50,9 @@
   font-weight: bold;
   margin-top: -1em;
 }
-.promo .un {
+/* .promo .un {
   color: #008f89;
-}
+} */
 .input input {
   border: 0.1em solid #eeedf0;
   padding: 1em;
@@ -98,14 +99,15 @@ table {
   width: 100%;
   border-collapse: collapse;
   position: absolute;
-  top: 30%;
-  margin: 2rem;
+  top: 20%;
+  margin: 1rem;
 }
 th,
 td {
   border: none;
   padding: 8px;
   text-align: center;
+  font-size: 20px;
 }
 th {
   background-color: #f7faff;
@@ -125,17 +127,14 @@ table tr td:nth-child(4) input {
   cursor: pointer;
 }
 
-table tbody tr:nth-child(1) {
-  background-color: rgb(185, 248, 185);
-  width: 90%;
-}
+
 table tbody tr:nth-child(1) input[type="checkbox"] {
   background-color: #008f89;
 }
 
 table tbody tr td input[type="checkbox"] {
-  appearance: none;
-  -webket-appearance: none;
+  /* appearance: none; */
+  /* -webket-appearance: none; */
   /* accent-color: #008F89; */
   width: 10%;
   height: 2em;
